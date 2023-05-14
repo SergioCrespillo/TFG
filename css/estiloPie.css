@@ -1,0 +1,13 @@
+.mainPie{
+    display: flex;
+    padding-left: 60px;
+    width: 1260px;
+    background-color: whitesmoke;
+    border-top: solid 1px black;
+    float: left;
+}
+.pieText2{
+    text-align:center;
+    margin:auto;
+    color: darkgoldenrod;
+}

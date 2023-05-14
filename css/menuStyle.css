@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  .menul{
+    width: 100%;
+  }
+  nav{
+    height: 50px;
+    background-color:whitesmoke;
+    border: black solid 2px;
+  }
+  .fixed{position:fixed; top:0}
+  nav .logo{
+    line-height: 60px;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+  
+  nav .btn-menu {
+    line-height: 40px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease all;
+  }
+  
+  nav .btn-menu:hover {
+      border: 1px solid goldenrod;
+      color: #828282;
+  }
+  nav .btn-menu:active {
+      border: none;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 40px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    font-family: 'Haettenschweiler';
+    padding: 0 15px;
+    display: block;
+    line-height: 50px;
+    font-size: 25px;
+    background: whitesmoke;
+    transition: .4s;
+    color: black;
+  }
+  nav ul li a:hover{
+    color:gold;
+  }
+  
+  nav ul li:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  } 
+  nav ul ul{
+    position: absolute;
+    top: 50px;
+    border-top: 3px black solid;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul ul li{
+    width: 120px;
+    display: list-item;
+    position: relative;
+    border: 1px black solid;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -50px;
+    left: 120px;
+  }
